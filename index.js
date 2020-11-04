@@ -20,4 +20,5 @@ app.use('/api/user', authRoute);
 app.use('/api/posts', postRoute);
 app.use('/api/points', postRoute);
 
-app.listen(3000, () => console.log('Server running'));
+var porta = process.env.PORT || 3000;
+app.listen(porta, () => console.log('Server running'));
